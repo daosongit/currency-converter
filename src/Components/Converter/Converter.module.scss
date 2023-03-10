@@ -1,0 +1,46 @@
+.icoReplace {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.2s;
+  &:hover {
+    background: rgba(0, 33, 74, 0.05);
+    transition: background 0.2s;
+  }
+  &:active {
+    background: rgba(0, 33, 74, 0.2);
+  }
+}
+
+.converter {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
+
+  .form {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  @mixin textArea {
+    width: 50%;
+    border: 1px solid rgb(211, 211, 211);
+    padding: 10px 5px;
+    border-radius: 5px;
+    &:focus {
+      outline: 1px solid #00214a;
+    }
+  }
+  input {
+    @include textArea;
+  }
+  select {
+    @include textArea;
+  }
+}

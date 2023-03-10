@@ -1,0 +1,46 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 30px;
+  padding: 0 40px;
+  height: 60px;
+  background-color: #00214a;
+  color: whitesmoke;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    img {
+      width: 100%;
+    }
+  }
+
+  span {
+    font-size: 1.2rem;
+    @media (max-width: 350px) {
+      display: none;
+    }
+  }
+}
+
+.rateContainer {
+  display: flex;
+  column-gap: 10px;
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+  }
+}
+.rate {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,20 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+  padding: 0 40px;
+  height: 60px;
+  background-color: #00214a;
+  color: whitesmoke;
+  margin-top: auto;
+}
+
+.powered {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  @media (max-width: 400px) {
+    width: 110px;
+  }
+}
